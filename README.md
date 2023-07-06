@@ -1,2 +1,1 @@
-# solve_problems
-# solve_problems
+# Popular algorithms problems solutions in JS, TS, Dart and Python

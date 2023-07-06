@@ -10,6 +10,8 @@ import 'replaceAll.dart';
 import 'findPrevDuplicate.dart';
 import 'findDuplicates.dart';
 import 'getAlphabetLetterIdx.dart';
+import 'findDuplicatesInRange.dart';
+import 'removeVowels.dart';
 
 void main() {
   var firstLeft = FindFirstLeftTargetIdx.result([1, 2, 3, 1, 2, 3], 3);
@@ -52,4 +54,16 @@ void main() {
 
   var getAlphabetLetterIdx = GetAlphabetLetterIdx.result('a');
   print(getAlphabetLetterIdx);
+
+  var findDuplicatesInRange = FindDuplicatesInRange.result(
+      [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 0, 9, 9, 9, 10], 1, 5, 0);
+  print(findDuplicatesInRange);
+
+  var removeVowels = RemoveVowels.result("This website is for losers LOL!");
+  print(removeVowels);
+  var removeVowels1 = RemoveVowels.result(
+      "No offense but,\nYour writing is among the worst I've ever read");
+  print(removeVowels1);
+  var removeVowels2 = RemoveVowels.result("What are you, a communist?");
+  print(removeVowels2);
 }
