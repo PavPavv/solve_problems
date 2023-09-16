@@ -1,5 +1,5 @@
 class FindDuplicates {
-  static result(List<int> arr) {
+  static List<int> result(List<int> arr) {
     Map<int, int> hashTable = {};
     List<int> result = [];
 

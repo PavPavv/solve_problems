@@ -1,5 +1,5 @@
 class WithSeparator {
-  static result(String separator, List<int> args) {
+  static String result(String separator, List<int> args) {
     String result = '';
     args.forEach((element) {
       result += separator + '$element';

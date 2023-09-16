@@ -10,4 +10,4 @@ function withSeparator() {
   return result;
 }
 console.log(withSeparator('!', 1, 2, 3, 4, 5));
-// O(n-1)
+// O(n)

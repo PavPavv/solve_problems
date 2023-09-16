@@ -18,6 +18,9 @@
 14. countDuplicates
 15. getAlphabetLetterIdx
 16. withSeparator
+17. isEmptyObj
+18. findMaxArrVal
+19. shortestStr
 
 ## Medium
 

@@ -13,6 +13,10 @@ import 'getAlphabetLetterIdx.dart';
 import 'findDuplicatesInRange.dart';
 import 'removeVowels.dart';
 import 'withSeparator.dart';
+import 'countDuplicates.dart';
+import 'isMapEmpty.dart';
+import 'findMaxArrVal.dart';
+import 'getShortestStr.dart';
 
 void main() {
   var firstLeft = FindFirstLeftTargetIdx.result([1, 2, 3, 1, 2, 3], 3);
@@ -69,5 +73,21 @@ void main() {
   // print(removeVowels2);
 
   var withSeparator = WithSeparator.result('!', [1, 2, 3, 4, 5]);
-  print(withSeparator);
+  // print(withSeparator);
+
+  var countDuplicates = CountDuplicates.result([1, 2, 3, 3, 4, 5, 5, 6, 7]);
+  // print(countDuplicates);
+
+  var isEmptyMap = IsMapEmpty.result({});
+  var isEmptyMap1 = IsMapEmpty.result({'name': 'Pav'});
+  ;
+  // print(isEmptyMap);
+  // print(isEmptyMap1);
+
+  var findMaxListArr =
+      FindMaxListArr.result([3, 5, 2, 1, 3, 7, 66, 8, 9, 4, 100, 45]);
+  // print(findMaxListArr);
+
+  var getShortestStr = GetShortestStr.result('What a beautiful day!');
+  print(getShortestStr);
 }
