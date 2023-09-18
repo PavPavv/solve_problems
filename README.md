@@ -21,6 +21,8 @@
 17. isEmptyObj
 18. findMaxArrVal
 19. shortestStr
+20. showAtIntervals
+21. showAtAutoIntervals
 
 ## Medium
 

@@ -15,8 +15,9 @@ import 'removeVowels.dart';
 import 'withSeparator.dart';
 import 'countDuplicates.dart';
 import 'isMapEmpty.dart';
-import 'findMaxArrVal.dart';
+import 'findMaxListVal.dart';
 import 'getShortestStr.dart';
+import 'showAtIntervals.dart';
 
 void main() {
   var firstLeft = FindFirstLeftTargetIdx.result([1, 2, 3, 1, 2, 3], 3);
@@ -89,5 +90,7 @@ void main() {
   // print(findMaxListArr);
 
   var getShortestStr = GetShortestStr.result('What a beautiful day!');
-  print(getShortestStr);
+  // print(getShortestStr);
+
+  ShowAtIntervals.result(1);
 }
