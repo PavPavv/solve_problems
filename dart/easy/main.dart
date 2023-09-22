@@ -96,13 +96,13 @@ void main() {
   // ShowAtIntervals.result(1);
 
   var checkBracketsSimple = CheckBracketsSimple.result('((()))', '(');
-  print(checkBracketsSimple);
+  // print(checkBracketsSimple);
   var checkBracketsSimple1 = CheckBracketsSimple.result('((())', '(');
-  print(checkBracketsSimple1);
+  // print(checkBracketsSimple1);
   var checkBracketsSimple2 = CheckBracketsSimple.result('((())))))', '(');
-  print(checkBracketsSimple2);
+  // print(checkBracketsSimple2);
   var checkBracketsSimple3 = CheckBracketsSimple.result('()()()', '(');
-  print(checkBracketsSimple3);
+  // print(checkBracketsSimple3);
   var checkBracketsSimple4 = CheckBracketsSimple.result('()()()))', '(');
-  print(checkBracketsSimple4);
+  // print(checkBracketsSimple4);
 }

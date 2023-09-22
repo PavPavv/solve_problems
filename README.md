@@ -27,4 +27,6 @@
 
 ## Medium
 
+1. checkBrackets
+
 ## Hard
