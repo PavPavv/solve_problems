@@ -18,6 +18,7 @@ import 'isMapEmpty.dart';
 import 'findMaxListVal.dart';
 import 'getShortestStr.dart';
 import 'showAtIntervals.dart';
+import 'checkBracketsSimple.dart';
 
 void main() {
   var firstLeft = FindFirstLeftTargetIdx.result([1, 2, 3, 1, 2, 3], 3);
@@ -92,5 +93,16 @@ void main() {
   var getShortestStr = GetShortestStr.result('What a beautiful day!');
   // print(getShortestStr);
 
-  ShowAtIntervals.result(1);
+  // ShowAtIntervals.result(1);
+
+  var checkBracketsSimple = CheckBracketsSimple.result('((()))', '(');
+  print(checkBracketsSimple);
+  var checkBracketsSimple1 = CheckBracketsSimple.result('((())', '(');
+  print(checkBracketsSimple1);
+  var checkBracketsSimple2 = CheckBracketsSimple.result('((())))))', '(');
+  print(checkBracketsSimple2);
+  var checkBracketsSimple3 = CheckBracketsSimple.result('()()()', '(');
+  print(checkBracketsSimple3);
+  var checkBracketsSimple4 = CheckBracketsSimple.result('()()()))', '(');
+  print(checkBracketsSimple4);
 }

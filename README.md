@@ -23,6 +23,7 @@
 19. shortestStr
 20. showAtIntervals
 21. showAtAutoIntervals
+22. checkBracketsSimple
 
 ## Medium
 
