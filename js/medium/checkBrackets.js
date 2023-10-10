@@ -10,7 +10,8 @@ function checkBrackets(s) {
     if (pairs.open.includes(item)) {
       stack.push(item);
     } else if (pairs.close.includes(item)) {
-      var openBracket = pairs.open[pairs.close.indexOf(item)];
+      var closeIdx = pairs.close.indexOf(item);
+      var openBracket = pairs.open[closeIdx];
       if (openBracket === stack[stack.length - 1]) {
         stack.splice(-1, 1);
       } else {

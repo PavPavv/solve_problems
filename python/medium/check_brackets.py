@@ -1,16 +1,16 @@
 def check_brackets(s):
   if not len(s.strip()):
     return False
-  open = ["(", "[", "{"]
-  close = [")", "]", "}"]
+  open_list = ["(", "[", "{"]
+  close_list = [")", "]", "}"]
   stack = []
 
   for item in s:
-    if item in open:
+    if item in open_list:
       stack.append(item)
-    elif item in close:
-      openIdx = close.index(item)
-      if ((len(stack) > 0) and open[openIdx] == stack[len(stack) - 1]):
+    elif item in close_list:
+      openIdx = close_list.index(item)
+      if ((len(stack) > 0) and open_list[openIdx] == stack[len(stack) - 1]):
         stack.pop()
       else:
         return False

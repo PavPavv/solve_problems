@@ -28,5 +28,6 @@
 ## Medium
 
 1. checkBrackets
+2. groupAnagramPairs
 
 ## Hard
