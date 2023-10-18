@@ -1,4 +1,5 @@
 import 'checkBrackets.dart';
+import 'findPopularChar.dart';
 import 'groupAnagramPairs.dart';
 
 void main() {
@@ -16,5 +17,7 @@ void main() {
   // print(checkBrackets5);
   var groupAnagramPairs =
       GroupAnagramPairs.result(['ann', 'nan', 'd', 'pie', 'cort', 'iep']);
-  print(groupAnagramPairs);
+  // print(groupAnagramPairs);
+  var popularChar = FindPopularChar.result('ababa');
+  // print(popularChar);
 }

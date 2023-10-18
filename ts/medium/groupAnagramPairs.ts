@@ -2,8 +2,8 @@ export const groupAnagramPairs = (arr: string[]): string[][] => {
   var hashTable: { [key: string]: string[] } = {};
   for (var i = 0; i < arr.length; i++) {
     var sortedItem: string = arr[i]
-      .toLowerCase()
       .trim()
+      .toLowerCase()
       .split('')
       .sort()
       .join('');

@@ -29,5 +29,6 @@
 
 1. checkBrackets
 2. groupAnagramPairs
+3. findPopularChar
 
 ## Hard
