@@ -30,5 +30,6 @@
 1. checkBrackets
 2. groupAnagramPairs
 3. findPopularChar
+4. findFirstAndSecondMax
 
 ## Hard

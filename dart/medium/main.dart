@@ -1,4 +1,5 @@
 import 'checkBrackets.dart';
+import 'findFirstAndSecondMax.dart';
 import 'findPopularChar.dart';
 import 'groupAnagramPairs.dart';
 
@@ -20,4 +21,7 @@ void main() {
   // print(groupAnagramPairs);
   var popularChar = FindPopularChar.result('ababa');
   // print(popularChar);
+  var findFirstAndSecondMax =
+      FindFirstAndSecondMax.result([10, -2, 1, 2, 3, 4, 5]);
+  print(findFirstAndSecondMax);
 }
