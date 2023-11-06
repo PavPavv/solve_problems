@@ -31,5 +31,6 @@
 2. groupAnagramPairs
 3. findPopularChar
 4. findFirstAndSecondMax
+5. findMinEven
 
 ## Hard
