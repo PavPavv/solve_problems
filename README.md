@@ -32,5 +32,6 @@
 3. findPopularChar
 4. findFirstAndSecondMax
 5. findMinEven
+6. closureCounter
 
 ## Hard

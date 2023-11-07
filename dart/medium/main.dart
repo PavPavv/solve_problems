@@ -3,6 +3,7 @@ import 'findFirstAndSecondMax.dart';
 import 'findPopularChar.dart';
 import 'groupAnagramPairs.dart';
 import 'findMinEven.dart';
+import 'closureCounter.dart';
 
 void main() {
   var checkBrackets = CheckBrackets.result('(){}[]');
@@ -27,4 +28,10 @@ void main() {
   // print(findFirstAndSecondMax);
   var findMinEven = FindMinEven.result([10, -2, 1, 2, 3, 4, 5]);
   // print(findMinEven);
+  var closureCounter = ClosureCounter.result(100);
+  closureCounter();
+  closureCounter();
+  closureCounter();
+  var test1 = closureCounter();
+  print(test1);
 }
