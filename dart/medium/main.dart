@@ -4,6 +4,7 @@ import 'findPopularChar.dart';
 import 'groupAnagramPairs.dart';
 import 'findMinEven.dart';
 import 'closureCounter.dart';
+import 'fibonacci.dart';
 
 void main() {
   var checkBrackets = CheckBrackets.result('(){}[]');
@@ -33,5 +34,9 @@ void main() {
   closureCounter();
   closureCounter();
   var test1 = closureCounter();
-  print(test1);
+  // print(test1);
+  var fib = Fibonacci.result(0);
+  var fib1 = Fibonacci.result(1);
+  var fib2 = Fibonacci.result(9);
+  // print([fib, fib1, fib2]);
 }
