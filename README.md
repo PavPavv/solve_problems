@@ -33,6 +33,7 @@
 4. findFirstAndSecondMax
 5. findMinEven
 6. closureCounter
-7. Fibonacci
+7. fibonacci
+8. uniqueSums
 
 ## Hard

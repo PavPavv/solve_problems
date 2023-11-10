@@ -5,6 +5,7 @@ import 'groupAnagramPairs.dart';
 import 'findMinEven.dart';
 import 'closureCounter.dart';
 import 'fibonacci.dart';
+import 'uniqueSums.dart';
 
 void main() {
   var checkBrackets = CheckBrackets.result('(){}[]');
@@ -39,4 +40,6 @@ void main() {
   var fib1 = Fibonacci.result(1);
   var fib2 = Fibonacci.result(9);
   // print([fib, fib1, fib2]);
+  var uniqueSums = UniqueSums.result([1, 2, 3, 4, 5, 6], 6);
+  print(uniqueSums);
 }
