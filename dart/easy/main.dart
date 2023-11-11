@@ -19,6 +19,7 @@ import 'findMaxListVal.dart';
 import 'getShortestStr.dart';
 import 'showAtIntervals.dart';
 import 'checkBracketsSimple.dart';
+import 'calcChars.dart';
 
 void main() {
   var firstLeft = FindFirstLeftTargetIdx.result([1, 2, 3, 1, 2, 3], 3);
@@ -105,4 +106,6 @@ void main() {
   // print(checkBracketsSimple3);
   var checkBracketsSimple4 = CheckBracketsSimple.result('()()()))', '(');
   // print(checkBracketsSimple4);
+  var calcChars = CalcChars.result('BBBAADDDDDECCCC');
+  print(calcChars);
 }

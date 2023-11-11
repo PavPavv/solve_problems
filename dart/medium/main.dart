@@ -41,5 +41,5 @@ void main() {
   var fib2 = Fibonacci.result(9);
   // print([fib, fib1, fib2]);
   var uniqueSums = UniqueSums.result([1, 2, 3, 4, 5, 6], 6);
-  print(uniqueSums);
+  // print(uniqueSums);
 }

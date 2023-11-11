@@ -24,6 +24,7 @@
 20. showAtIntervals
 21. showAtAutoIntervals
 22. checkBracketsSimple
+23. calcChars
 
 ## Medium
 
