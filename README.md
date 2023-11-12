@@ -36,5 +36,6 @@
 6. closureCounter
 7. fibonacci
 8. uniqueSums
+9. findLastIdx
 
 ## Hard

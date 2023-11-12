@@ -6,6 +6,7 @@ import 'findMinEven.dart';
 import 'closureCounter.dart';
 import 'fibonacci.dart';
 import 'uniqueSums.dart';
+import 'findLastIdx.dart';
 
 void main() {
   var checkBrackets = CheckBrackets.result('(){}[]');
@@ -42,4 +43,6 @@ void main() {
   // print([fib, fib1, fib2]);
   var uniqueSums = UniqueSums.result([1, 2, 3, 4, 5, 6], 6);
   // print(uniqueSums);
+  var findLastIdx = FindLastIdx.result('abbaao', 'a', 'b');
+  print(findLastIdx);
 }
