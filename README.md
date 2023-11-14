@@ -37,5 +37,6 @@
 7. fibonacci
 8. uniqueSums
 9. findLastIdx
+10. compareStr
 
 ## Hard

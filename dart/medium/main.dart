@@ -7,6 +7,7 @@ import 'closureCounter.dart';
 import 'fibonacci.dart';
 import 'uniqueSums.dart';
 import 'findLastIdx.dart';
+import 'compareStr.dart';
 
 void main() {
   var checkBrackets = CheckBrackets.result('(){}[]');
@@ -44,5 +45,9 @@ void main() {
   var uniqueSums = UniqueSums.result([1, 2, 3, 4, 5, 6], 6);
   // print(uniqueSums);
   var findLastIdx = FindLastIdx.result('abbaao', 'a', 'b');
-  print(findLastIdx);
+  // print(findLastIdx);
+  var compareStr = CompareStr.result('banana', 'avocado');
+  var compareStr1 = CompareStr.result('Banana', 'avocado');
+  print(compareStr);
+  print(compareStr1);
 }
