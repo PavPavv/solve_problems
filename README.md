@@ -1,5 +1,10 @@
 # Popular algorithms problems solutions in JS, TS, Dart and Python
 
+## JS-specified problems
+
+1. Add new native method to the strings.
+2. myBind
+
 ## Easy
 
 1. findFirstLeftTargetIdx
