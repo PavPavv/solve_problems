@@ -12,7 +12,7 @@ export const checkBrackets = (s: string): boolean => {
     } else if (pairs.close.includes(item)) {
       var openBracket = pairs.open[pairs.close.indexOf(item)];
       if (openBracket === stack[stack.length - 1]) {
-        stack.splice(-1, 1);
+        stack.pop();
       } else {
         stack.push(item);
       }
