@@ -18,7 +18,7 @@ Function.prototype.myCall = function (o) {
 
 Function.prototype.myBind = function (o) {
   var self = this;
-  return self.call(o);
+  return self.myCall(o);
 };
 
 var test1 = getName.myBind(obj);

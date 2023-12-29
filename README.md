@@ -3,7 +3,10 @@
 ## JS-specified problems
 
 1. Add new native method to the strings.
-2. myBind
+2. native Bind
+3. native Call
+4. native forEach
+5. native string reverse
 
 ## Easy
 
