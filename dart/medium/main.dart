@@ -8,6 +8,7 @@ import 'fibonacci.dart';
 import 'uniqueSums.dart';
 import 'findLastIdx.dart';
 import 'compareStr.dart';
+import 'reverseStr.dart';
 
 void main() {
   var checkBrackets = CheckBrackets.result('(){}[]');
@@ -48,6 +49,8 @@ void main() {
   // print(findLastIdx);
   var compareStr = CompareStr.result('banana', 'avocado');
   var compareStr1 = CompareStr.result('Banana', 'avocado');
-  print(compareStr);
-  print(compareStr1);
+  // print(compareStr);
+  // print(compareStr1);
+  var reverseStr = ReverseStr.result('test');
+  print(reverseStr);
 }

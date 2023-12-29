@@ -46,5 +46,6 @@
 8. uniqueSums
 9. findLastIdx
 10. compareStr
+11. reverseStr
 
 ## Hard
