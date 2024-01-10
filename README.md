@@ -33,6 +33,7 @@
 21. showAtAutoIntervals
 22. checkBracketsSimple
 23. calcChars
+24. buildEgyptTriangle
 
 ## Medium
 

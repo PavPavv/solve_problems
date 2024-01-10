@@ -20,6 +20,7 @@ import 'getShortestStr.dart';
 import 'showAtIntervals.dart';
 import 'checkBracketsSimple.dart';
 import 'calcChars.dart';
+import 'buildEgyptTriangle.dart';
 
 void main() {
   var firstLeft = FindFirstLeftTargetIdx.result([1, 2, 3, 1, 2, 3], 3);
@@ -107,5 +108,7 @@ void main() {
   var checkBracketsSimple4 = CheckBracketsSimple.result('()()()))', '(');
   // print(checkBracketsSimple4);
   var calcChars = CalcChars.result('BBBAADDDDDECCCC');
-  print(calcChars);
+  // print(calcChars);
+  var buildEgyptTriangle = BuildEgyptTriangle.result(7);
+  print(buildEgyptTriangle);
 }
