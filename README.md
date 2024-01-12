@@ -34,6 +34,7 @@
 22. checkBracketsSimple
 23. calcChars
 24. buildEgyptTriangle
+25. fizzBuzz
 
 ## Medium
 
