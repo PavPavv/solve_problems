@@ -35,6 +35,7 @@
 23. calcChars
 24. buildEgyptTriangle
 25. fizzBuzz
+26. squareGrid
 
 ## Medium
 

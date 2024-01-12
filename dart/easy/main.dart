@@ -21,6 +21,8 @@ import 'showAtIntervals.dart';
 import 'checkBracketsSimple.dart';
 import 'calcChars.dart';
 import 'buildEgyptTriangle.dart';
+import 'fizzBuzz.dart';
+import 'squareGrid.dart';
 
 void main() {
   var firstLeft = FindFirstLeftTargetIdx.result([1, 2, 3, 1, 2, 3], 3);
@@ -110,5 +112,11 @@ void main() {
   var calcChars = CalcChars.result('BBBAADDDDDECCCC');
   // print(calcChars);
   var buildEgyptTriangle = BuildEgyptTriangle.result(7);
-  print(buildEgyptTriangle);
+  // print(buildEgyptTriangle);
+
+  FizzBuzz fizzBuzz = FizzBuzz(count: 25);
+  // print(fizzBuzz.fizzBuzzCount);
+  // print(fizzBuzz.fb());
+  SquareGrid squareGrid = SquareGrid(count: 8);
+  print(squareGrid.paintGrid());
 }
