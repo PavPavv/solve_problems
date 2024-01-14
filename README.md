@@ -7,6 +7,8 @@
 3. native Call
 4. native forEach
 5. native string reverse
+6. 5 ways of prototyping object in JS
+7. my Object.create()
 
 ## Easy
 
@@ -50,5 +52,6 @@
 9. findLastIdx
 10. compareStr
 11. reverseStr
+12. findBlackSheep
 
 ## Hard

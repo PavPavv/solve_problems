@@ -118,5 +118,5 @@ void main() {
   // print(fizzBuzz.fizzBuzzCount);
   // print(fizzBuzz.fb());
   SquareGrid squareGrid = SquareGrid(count: 8);
-  print(squareGrid.paintGrid());
+  // print(squareGrid.paintGrid());
 }
