@@ -54,4 +54,16 @@
 11. reverseStr
 12. findBlackSheep
 
+13. longestCommonPrefix
+14. func('a.b.d.e') -> { a: { b: { d: { e: {} } } } }
+15. findDeepestLeavesSum (sumTree)
+16. flat array or object
+17. binarySearch
+
 ## Hard
+
+1. arrSubset
+2. rotate matrix at right up to 90 degrees
+3. LinkedList
+4. Queue
+5. myStringIntoSmsArr

@@ -10,6 +10,7 @@ import 'findLastIdx.dart';
 import 'compareStr.dart';
 import 'reverseStr.dart';
 import 'findBlackSheep.dart';
+import 'longestCommonPrefix.dart';
 
 void main() {
   var checkBrackets = CheckBrackets.result('(){}[]');
@@ -55,5 +56,8 @@ void main() {
   var reverseStr = ReverseStr.result('test');
   // print(reverseStr);
   var findBlackSheep = FindBlackSheep(arr: [2, 4, 6, 8, 9, 10, 12]);
-  print(findBlackSheep.sheep);
+  // print(findBlackSheep.sheep);
+  var longestCommonPrefix =
+      LongestCommonPrefix(arr: ['flower', 'flow', 'Flight']);
+  // print(longestCommonPrefix.getPrefix());
 }
