@@ -1,7 +1,7 @@
-class LongestCommonPrefix {
+class LongestCommonPrefixSimple {
   List<String> arr;
 
-  LongestCommonPrefix({required this.arr});
+  LongestCommonPrefixSimple({required this.arr});
 
   String getPrefix() {
     String result = '';

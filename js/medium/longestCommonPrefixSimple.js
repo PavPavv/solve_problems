@@ -1,4 +1,4 @@
-function longestComPrefix(strArr) {
+function longestCommonPrefixSimple(strArr) {
   var result = '';
   if (
     Array.isArray(strArr) &&
@@ -22,4 +22,4 @@ function longestComPrefix(strArr) {
   }
   return result;
 }
-console.log(longestComPrefix(['flower', 'flow', 'Flight']));
+console.log(longestCommonPrefixSimple(['red', 'flower', 'flow', 'Flight']));

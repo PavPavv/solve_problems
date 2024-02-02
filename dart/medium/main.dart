@@ -10,9 +10,58 @@ import 'findLastIdx.dart';
 import 'compareStr.dart';
 import 'reverseStr.dart';
 import 'findBlackSheep.dart';
-import 'longestCommonPrefix.dart';
+import 'longestCommonPrefixSimple.dart';
+import 'findBinaryTreeSum.dart';
 
 void main() {
+  BTreeNode bTree = {
+    // root
+    'value': 5,
+
+    // parent
+    'left': {
+      'value': 4,
+
+      // Internal node
+      'left': {
+        'value': 2,
+        // leaf
+        'left': {
+          'value': 1,
+          'left': null,
+          'right': null,
+        },
+        'right': null,
+      },
+
+      // leaf
+      'right': {
+        'value': 3,
+        'left': null,
+        'right': null,
+      },
+    },
+
+    // parent
+    'right': {
+      'value': 6,
+
+      // leaf
+      'left': {
+        'value': 7,
+        'left': null,
+        'right': null,
+      },
+
+      // leaf
+      'right': {
+        'value': 8,
+        'left': null,
+        'right': null,
+      },
+    },
+  } as BTreeNode;
+
   var checkBrackets = CheckBrackets.result('(){}[]');
   // print(checkBrackets);
   var checkBrackets1 = CheckBrackets.result('([{}])');
@@ -57,7 +106,9 @@ void main() {
   // print(reverseStr);
   var findBlackSheep = FindBlackSheep(arr: [2, 4, 6, 8, 9, 10, 12]);
   // print(findBlackSheep.sheep);
-  var longestCommonPrefix =
-      LongestCommonPrefix(arr: ['flower', 'flow', 'Flight']);
-  // print(longestCommonPrefix.getPrefix());
+  var longestCommonPrefixSimple =
+      LongestCommonPrefixSimple(arr: ['flower', 'flow', 'Flight']);
+  // print(longestCommonPrefixSimple.getPrefix());
+  var findBinaryTreeSum = FindBinaryTreeSum();
+  print(findBinaryTreeSum.getTreeSum(bTree));
 }

@@ -13,7 +13,7 @@ console.log(result); //  undefined
 // 1
 const o22 = {};
 o22.__proto__ = o1;
-const result2 = o21.name;
+const result2 = o22.name;
 console.log(result2);
 
 // 2
@@ -38,4 +38,53 @@ Object.prototype.pav = function () {
 };
 console.log(Object.pav());
 
-// + ES5 function constructors and ES6 classes methods prototyping
+// 6
+// Parent constructor
+function Animal(aName) {
+  this.aName = aName;
+}
+
+// Child constructor
+function Dog(aName) {
+  // sort of super stuff from ES6
+  // bind parent constructor
+  // Call the parent constructor with the child instance as 'this'
+  Animal.call(this, aName);
+}
+// Inherit from the parent prototype
+Dog.prototype = Object.create(Animal.prototype);
+
+Dog.prototype.getName = function () {
+  return this.aName;
+};
+
+var jack = new Dog('Jack');
+console.log(jack.aName);
+console.log(jack.getName());
+
+// 7
+
+class Person {
+  constructor() {
+    this.metaData = 'Hi, I am parent meta data';
+  }
+}
+
+class Girl extends Person {
+  constructor(girlName) {
+    super();
+    this.girlName = girlName;
+  }
+
+  getGirlsName() {
+    return this.girlName;
+  }
+
+  getParentMeta() {
+    return this.metaData;
+  }
+}
+
+const ann = new Girl('Ann');
+console.log(ann.getGirlsName());
+console.log(ann.getParentMeta());

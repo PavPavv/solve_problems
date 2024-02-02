@@ -1,4 +1,4 @@
-def longest_common_prefix(arr):
+def longest_common_prefix_simple(arr):
   result = ''
   if isinstance(arr, list) and len(arr) > 1:
     prepared_arr = []
@@ -24,4 +24,4 @@ def longest_common_prefix(arr):
 
 
   return result
-print(longest_common_prefix(['flower', 'flow', 'Flight']))
+print(longest_common_prefix_simple(['flower', 'flow', 'Flight']))

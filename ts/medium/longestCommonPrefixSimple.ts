@@ -1,4 +1,4 @@
-export const longestComPrefix = (strArr: string[]): string => {
+export const longestCommonPrefixSimple = (strArr: string[]): string => {
   let result = '';
   if (
     Array.isArray(strArr) &&
@@ -8,6 +8,7 @@ export const longestComPrefix = (strArr: string[]): string => {
     const preparedArr: string[] = strArr.map((word) =>
       word.trim().toLowerCase(),
     );
+    // we assume that first word in the array 100% had the same root as other words
     const firstWord: string = preparedArr.shift()!; //  not in the array anymore
     let counter = 0;
 
@@ -24,4 +25,4 @@ export const longestComPrefix = (strArr: string[]): string => {
   }
   return result;
 };
-console.log(longestComPrefix(['flower', 'flow', 'Flight']));
+console.log(longestCommonPrefixSimple(['flower', 'flow', 'Flight']));

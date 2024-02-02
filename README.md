@@ -10,6 +10,11 @@
 6. 5 ways of prototyping object in JS
 7. my Object.create()
 
+TODO:
+
+- myMap
+- five(plus(seven(minus(three())))) which returns 9
+
 ## Easy
 
 1. findFirstLeftTargetIdx
@@ -53,17 +58,31 @@
 10. compareStr
 11. reverseStr
 12. findBlackSheep
+13. longestCommonPrefixSimple\*
+14. findBinaryTreeSum
 
-13. longestCommonPrefix
-14. func('a.b.d.e') -> { a: { b: { d: { e: {} } } } }
-15. findDeepestLeavesSum (sumTree)
-16. flat array or object
-17. binarySearch
+TODO:
+
+- generate binary tree (class)
+- binarySearch
+- sber problem
+- func('a.b.d.e') -> { a: { b: { d: { e: {} } } } }
+- findDeepestLeavesSum (sumTree)
+- flat array or object
 
 ## Hard
 
-1. arrSubset
-2. rotate matrix at right up to 90 degrees
-3. LinkedList
-4. Queue
-5. myStringIntoSmsArr
+TODO:
+
+- arrSubset
+- rotate matrix at right up to 90 degrees
+- LinkedList
+- Queue
+- myStringIntoSmsArr
+
+---
+
+### Notes
+
+longestCommonPrefixSimple - marked simple just because we assume that the problem is to find most common prefix in the array of words which are definitely all have something in common, like 'flower', 'flow', 'Flight'...
+It is not a suitable solution for a hard big search through any words, like 'red', ' ', 'Flight', '#@@@@!', 'm', 'flow', 'sdfSsgsdDghj gsd 12', '4560000456.45', 'flower'...
