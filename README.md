@@ -9,11 +9,11 @@
 5. native string reverse
 6. 5 ways of prototyping object in JS
 7. my Object.create()
+8. five(plus(seven(minus(three())))) which returns 9
 
 TODO:
 
 - myMap
-- five(plus(seven(minus(three())))) which returns 9
 
 ## Easy
 
@@ -60,6 +60,7 @@ TODO:
 12. findBlackSheep
 13. longestCommonPrefixSimple\*
 14. findBinaryTreeSum
+15. findObjectArrsSumRec
 
 TODO:
 
