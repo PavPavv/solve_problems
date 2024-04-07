@@ -62,6 +62,7 @@ TODO:
 13. longestCommonPrefixSimple\*
 14. findBinaryTreeSum
 15. findObjectArrsSumRec
+16. binarySearch (Wirth)
 
 TODO:
 
@@ -92,7 +93,7 @@ TODO:
 
 ### Tips
 
-1. Compile, run and remove js result in the single bash command line:
+1. Compile tsc, run and remove js result in the single bash command line:
 
 ```bash
 tsc fileName.ts && node fileName.js && rm -rf fileName.js
