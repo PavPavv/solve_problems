@@ -13,6 +13,7 @@ def binary_search(arr,target):
     middle = math.floor((l + r) / 2)
   return middle
 print(binary_search([1,2,3,4,5,6,7],2))
+# O(logN)
 
 def binary_search_1(arr,target):
   l = 0
@@ -26,3 +27,4 @@ def binary_search_1(arr,target):
       r = middle
   return l
 print(binary_search_1([1,2,3,4,5,6,7],2))
+# O(logN)

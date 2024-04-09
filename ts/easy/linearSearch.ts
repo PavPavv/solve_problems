@@ -35,6 +35,8 @@ export const linearSearch = (
 console.log('linearSearch', linearSearch(DATA, 2));
 console.log('linearSearch', linearSearch(DATA, 10));
 
+// O(n-k)
+
 export const linearSearch1 = (
   data: Structure[],
   targetId: number,
@@ -55,3 +57,5 @@ export const linearSearch1 = (
 
 console.log('linearSearch1', linearSearch1(DATA, 2));
 console.log('linearSearch1', linearSearch1(DATA, 10));
+
+// O(n-k)

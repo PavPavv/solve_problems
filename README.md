@@ -63,6 +63,7 @@ TODO:
 14. findBinaryTreeSum
 15. findObjectArrsSumRec
 16. binarySearch (Wirth)
+17. tableSearch (Wirth list search)
 
 TODO:
 

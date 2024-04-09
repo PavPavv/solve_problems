@@ -23,19 +23,22 @@ def linear_search(data, target):
   return data[counter]
 print({ "name": "linear_search", "result": linear_search(data, 2) })
 print({ "name": "linear_search", "result": linear_search(data, 10) })
+# O(n-k)
 
 def linear_search_1(data, target):
   barrier = len(data)
-  data[barrier] = { "id": barrier, "name": "" }
+  data.append({ "id": barrier, "name": "" })
   counter = 0
 
   if target > barrier:
     return None
 
-  while counter < len(data) and data[counter]["id"] != target:
+  while data[counter]["id"] != target:
     counter += 1
-  if target > len(data):
+
+  if counter == barrier:
     return None
   return data[counter]
 print({ "name": "linear_search_1", "result": linear_search_1(data, 2) })
 print({ "name": "linear_search_1", "result": linear_search_1(data, 10) })
+# O(n-k)
