@@ -63,7 +63,8 @@ TODO:
 14. findBinaryTreeSum
 15. findObjectArrsSumRec
 16. binarySearch (Wirth)
-17. tableSearch (Wirth list search)
+17. tableSearch (Wirth list search)\*\*
+18. simpleSearchString(Wirth)
 
 TODO:
 
@@ -88,7 +89,9 @@ TODO:
 
 ### Notes
 
-> longestCommonPrefixSimple - marked simple just because we assume that the problem is to find most common prefix in the array of words which are definitely all have something in common, like 'flower', 'flow', 'Flight'... It is not a suitable solution for a hard big search through any words, like 'red', ' ', 'Flight', '#@@@@!', 'm', 'flow', 'sdfSsgsdDghj gsd 12', '4560000456.45', 'flower'...
+> \*longestCommonPrefixSimple - marked simple just because we assume that the problem is to find most common prefix in the array of words which are definitely all have something in common, like 'flower', 'flow', 'Flight'... It is not a suitable solution for a hard big search through any words, like 'red', ' ', 'Flight', '#@@@@!', 'm', 'flow', 'sdfSsgsdDghj gsd 12', '4560000456.45', 'flower'...
+
+> \*\* not completed
 
 > Since 15th medium problem I have stopped solving in 4 languages 'cuz it's overwhelming. TS now is a JS with types, so no need to write ES5 manually if it is not a language specific tasks. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, in is not much sense learning and using it instead of JS or Java/Kotlin.
 
@@ -99,3 +102,7 @@ TODO:
 ```bash
 tsc fileName.ts && node fileName.js && rm -rf fileName.js
 ```
+
+### Wirth book notes
+
+1. Table search looks for first target entrance in an array. It is like a binary search: we should return left counter of the search.

@@ -1,6 +1,8 @@
 const text = 'abc def ghi';
 
-export const tableSearch = (source: string, target: string): any => {
+// Find first target entrance index in text
+
+export const tableSearch = (source: string, target: string): number => {
   const barrier = '|';
   target += barrier;
   const N = source.length - 1;
@@ -12,11 +14,11 @@ export const tableSearch = (source: string, target: string): any => {
     let middle = Math.floor((l + r) / 2);
     i = 0;
 
-    while (target[i] !== barrier && target[i] === source[middle][i]) {
+    while (target[i] !== barrier && target[i] === source[i]) {
       i++;
     }
 
-    if (source[middle][i] < target[i]) {
+    if (source[middle] < target[i]) {
       l = middle + 1;
     } else {
       r = middle;
@@ -26,17 +28,16 @@ export const tableSearch = (source: string, target: string): any => {
   if (r < N) {
     i = 0;
 
-    while (target[i] !== barrier && target[i] === source[r][i]) {
+    while (target[i] !== barrier && target[i] === source[i]) {
       i++;
     }
   }
 
-  if (r < N && target[i] === source[r][i]) {
-    return { l, r, i };
+  if (r < N && target[i] === source[i]) {
+    return l;
   }
 
-  return { l, r, i };
+  return l;
 };
 console.log(tableSearch(text, 'def'));
-
-// TODO: not really sure about what this algorithm is going to do. (Skipped it)
+console.log(text[4]);

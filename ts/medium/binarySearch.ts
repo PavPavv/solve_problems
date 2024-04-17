@@ -15,6 +15,7 @@ export const binarySearch = (arr: number[], target: number): number => {
 };
 console.log(binarySearch([0, 1, 2, 3, 4, 5, 6, 7], 2));
 // O(logN)
+
 export const binarySearch1 = (arr: number[], target: number): number => {
   let l = 0;
   let r = arr.length - 1;
