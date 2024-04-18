@@ -64,7 +64,7 @@ TODO:
 15. findObjectArrsSumRec
 16. binarySearch (Wirth)
 17. tableSearch (Wirth list search)\*\*
-18. simpleSearchString(Wirth)
+18. simpleSearchString(Wirth)\*\*\*
 
 TODO:
 
@@ -93,6 +93,8 @@ TODO:
 
 > \*\* not completed
 
+> \*\*\* implementing Dijkstra loop
+
 > Since 15th medium problem I have stopped solving in 4 languages 'cuz it's overwhelming. TS now is a JS with types, so no need to write ES5 manually if it is not a language specific tasks. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, in is not much sense learning and using it instead of JS or Java/Kotlin.
 
 ### Tips
@@ -106,3 +108,14 @@ tsc fileName.ts && node fileName.js && rm -rf fileName.js
 ### Wirth book notes
 
 1. Table search looks for first target entrance in an array. It is like a binary search: we should return left counter of the search.
+
+2. Dijkstra loop implemented in JS, TS, Python and etc. for example, like while loop with if/else condition branches
+
+```python
+  while (i <= N-M and j < M):
+    if text[i+j] == pattern[j]:
+      j += 1
+    else:
+      i += 1
+      j = 0
+```
