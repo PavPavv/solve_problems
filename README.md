@@ -64,7 +64,7 @@ TODO:
 15. findObjectArrsSumRec
 16. binarySearch (Wirth)
 17. tableSearch (Wirth list search)\*\*
-18. simpleSearchString(Wirth)\*\*\*
+18. simpleSearchString (Wirth)\*\*\*
 
 TODO:
 
@@ -76,6 +76,8 @@ TODO:
 - flat array or object
 
 ## Hard
+
+1. knuthMorrisPrattSubstringSearch (Wirth)
 
 TODO:
 
@@ -104,6 +106,8 @@ TODO:
 ```bash
 tsc fileName.ts && node fileName.js && rm -rf fileName.js
 ```
+
+or you may use \*_run_ts_file.sh_ file in ts catalog in order to use it in a command with a single argument of file name
 
 ### Wirth book notes
 

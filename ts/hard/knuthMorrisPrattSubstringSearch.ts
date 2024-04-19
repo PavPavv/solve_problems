@@ -1,4 +1,4 @@
-const KnuthMorrisPrattSubstringSearch = (
+const knuthMorrisPrattSubstringSearch = (
   pattern: string,
   text: string,
 ): number => {
@@ -54,5 +54,5 @@ const KnuthMorrisPrattSubstringSearch = (
   return r;
 };
 console.log(
-  KnuthMorrisPrattSubstringSearch('ABCDABD', 'ABC ABCDAB ABCDABCDABDE'),
+  knuthMorrisPrattSubstringSearch('ABCDABD', 'ABC ABCDAB ABCDABCDABDE'),
 );
