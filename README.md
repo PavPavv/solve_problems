@@ -78,6 +78,7 @@ TODO:
 ## Hard
 
 1. knuthMorrisPrattSubstringSearch (Wirth)
+2. boyerMooreSubstrSearch (Wirth)
 
 TODO:
 

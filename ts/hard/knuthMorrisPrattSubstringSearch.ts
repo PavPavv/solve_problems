@@ -28,7 +28,6 @@ const knuthMorrisPrattSubstringSearch = (
         d[j] = k;
       } else {
         d[j] = d[k];
-        // console.log('d[j] === D[j]', d[j]);
       }
     }
   }
