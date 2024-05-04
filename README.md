@@ -11,6 +11,7 @@
 7. my Object.create()
 8. five(plus(seven(minus(three())))) which returns 9
 9. carry
+10. methods chain
 
 TODO:
 
