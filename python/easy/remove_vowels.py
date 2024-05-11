@@ -24,11 +24,15 @@ def remove_vowels_2(s):
     return s
 #	O(n^2)
 
-def remove_vowels_3(string):
-    return re.sub('[aeiou]', '', string, flags = re.IGNORECASE)
+def removeVowels_3(s):
+  return re.sub(r'[aeiouAEIOU]', '', s)
 #	O(n^2)
 
 def remove_vowels_4(string):
+    return re.sub('[aeiou]', '', string, flags = re.IGNORECASE)
+#	O(n^2)
+
+def remove_vowels_5(string):
     vowels = "aeiouAEIOU"
     for vowel in vowels:
         string = string.replace(vowel, '')
