@@ -67,6 +67,7 @@ TODO:
 16. binarySearch (Wirth)
 17. tableSearch (Wirth list search)\*\*
 18. simpleSearchString (Wirth)\*\*\*
+19. insertionSort (Wirth)
 
 TODO:
 
