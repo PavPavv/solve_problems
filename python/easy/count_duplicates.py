@@ -1,4 +1,4 @@
-def count_dublicates(arr):
+def count_duplicates(arr):
   hashTable = {}
   result = []
 
@@ -20,5 +20,5 @@ def count_dublicates(arr):
   return result
 
 
-print(count_dublicates([1, 2, 3, 3, 4, 5, 5, 6, 7]))
-print(count_dublicates([1, 2, 3, 4, 5, 6, 7]))
+print(count_duplicates([1, 2, 3, 3, 4, 5, 5, 6, 7]))
+print(count_duplicates([1, 2, 3, 4, 5, 6, 7]))
