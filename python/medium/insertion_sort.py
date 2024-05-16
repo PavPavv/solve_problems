@@ -38,7 +38,7 @@ users = [
 ]
 
 def insertion_sort(l):
-  result = l.copy()
+  result = l[:]
   j = 0
   for i, item in enumerate(result[1:]):
     print(i)
