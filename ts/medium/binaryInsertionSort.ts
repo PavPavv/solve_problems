@@ -42,21 +42,29 @@ const users: TUser[] = [
   },
 ];
 
-const insertionSort = (source: TUser[]): TUser[] => {
+const binaryInsertionSort = (source: TUser[]): TUser[] => {
   const arr = [...source];
-  let j;
+  const N = arr.length - 1;
 
   for (let i = 1; i < arr.length; i++) {
-    const item = arr[i];
-    j = i;
+    const x = arr[i];
+    let l = 0;
+    let r = i;
 
-    while (j > 0 && item.id < arr[j - 1].id) {
-      arr[j] = arr[j - 1];
-      j--;
+    while (l < r) {
+      let middle = Math.floor((l + r) / 2);
+      if (arr[middle].id <= x.id) {
+        l = middle + 1;
+      } else {
+        r = middle;
+      }
     }
-    arr[j] = item;
-  }
 
+    for (let j = i; j <= r + 1; j = j - 1) {
+      arr[j] = arr[j - 1];
+    }
+    arr[r] = x;
+  }
   return arr;
 };
-console.log(insertionSort(users));
+console.log(binaryInsertionSort(users));

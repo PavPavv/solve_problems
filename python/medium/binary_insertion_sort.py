@@ -37,9 +37,10 @@ users = [
   },
 ]
 
-def insertion_sort(l):
+def binary_insertion_sort(l):
   result = l[:]
   j = 0
+  
   for i, item in enumerate(result[1:]):
     j = i+1
     while j > 0 and item["id"] < result[j-1]["id"]:
@@ -47,5 +48,4 @@ def insertion_sort(l):
       j -= 1
     result[j] = item
   return result
-    
-print(insertion_sort(users))
+print(binary_insertion_sort(users))
