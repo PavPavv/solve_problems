@@ -38,7 +38,7 @@ TODO:
 17. isEmptyObj
 18. findMaxArrVal
 19. shortestStr
-20. showAtIntervals
+20. showAtIntervals (>>>next current repeat)
 21. showAtAutoIntervals
 22. checkBracketsSimple
 23. calcChars
