@@ -38,14 +38,15 @@ TODO:
 17. isEmptyObj
 18. findMaxArrVal
 19. shortestStr
-20. showAtIntervals (>>>next current repeat)
+20. showAtIntervals
 21. showAtAutoIntervals
-22. checkBracketsSimple
+22. checkBracketsSimple (>>> current repeat)
 23. calcChars
 24. buildEgyptTriangle
 25. fizzBuzz
 26. squareGrid
 27. linearSearch (Wirth)
+28. countdown
 
 ## Medium
 
