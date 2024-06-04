@@ -40,9 +40,9 @@ TODO:
 19. shortestStr
 20. showAtIntervals
 21. showAtAutoIntervals
-22. checkBracketsSimple (>>> current repeat)
+22. checkBracketsSimple
 23. calcChars
-24. buildEgyptTriangle
+24. buildEgyptTriangle (>>> current repeat)
 25. fizzBuzz
 26. squareGrid
 27. linearSearch (Wirth)
