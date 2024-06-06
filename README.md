@@ -42,8 +42,8 @@ TODO:
 21. showAtAutoIntervals
 22. checkBracketsSimple
 23. calcChars
-24. buildEgyptTriangle (>>> current repeat)
-25. fizzBuzz
+24. buildEgyptTriangle
+25. fizzBuzz (>>> current repeat)
 26. squareGrid
 27. linearSearch (Wirth)
 28. countdown
