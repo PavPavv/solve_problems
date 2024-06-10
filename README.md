@@ -45,12 +45,12 @@ TODO:
 24. buildEgyptTriangle
 25. fizzBuzz
 26. squareGrid
-27. linearSearch (Wirth) (>>> current repeat)
+27. linearSearch
 28. countdown
 
 ## Medium
 
-1. checkBrackets
+1. checkBrackets (Wirth) (>>> current repeat)
 2. groupAnagramPairs
 3. findPopularChar
 4. findFirstAndSecondMax
