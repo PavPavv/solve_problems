@@ -21,9 +21,10 @@ function checkBrackets(s) {
   }
   return stack.length === 0 ? true : false;
 }
-console.log(checkBrackets('(){}[]'));
-console.log(checkBrackets('([{}])'));
-console.log(checkBrackets('([{}{}{}])'));
-console.log(checkBrackets('([{}{}{}]'));
-console.log(checkBrackets('[{}]]]'));
-console.log(checkBrackets(' '));
+console.log(checkBrackets('(){}[]')); //  true
+console.log(checkBrackets('([{}])')); //  true
+console.log(checkBrackets('([{}{}{}])')); //  true
+console.log(checkBrackets('([{}{}{}]')); //  false
+console.log(checkBrackets('[{}]]]')); //  false
+console.log(checkBrackets(' ')); //  false
+// O(n)

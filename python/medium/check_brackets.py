@@ -1,30 +1,30 @@
 def check_brackets(s):
-  if not len(s.strip()):
-    return False
-  open_list = ["(", "[", "{"]
-  close_list = [")", "]", "}"]
-  stack = []
-
-  for item in s:
-    if item in open_list:
-      stack.append(item)
-    elif item in close_list:
-      openIdx = close_list.index(item)
-      if ((len(stack) > 0) and open_list[openIdx] == stack[len(stack) - 1]):
-        stack.pop()
-      else:
+    if not s.strip():
         return False
-  if len(stack) == 0:
-    return True
-  else:
-    return False
-  
+
+    opens = ['(','{','[']
+    closes = [')','}',']']
+    stack = []
+
+    for item in s:
+        if item in opens:
+            stack.append(item)
+        elif item in closes:
+            close_idx = closes.index(item)
+            open_bracket = opens[close_idx]
+            if len(stack) > 0 and open_bracket == stack[len(stack) - 1]:
+                stack.pop()
+            else:
+                stack.append(item)
+    if len(stack) == 0:
+        return True
+    else:
+        return False
 
 
-
-print(check_brackets('(){}[]'))
-print(check_brackets('([{}])'))
-print(check_brackets('([{}{}{}])'))
-print(check_brackets('([{}{}{}]'))
-print(check_brackets('[{}]]]'))
-print(check_brackets(' '))
+print(check_brackets('(){}[]')); #  True
+print(check_brackets('([{}])')); #  True
+print(check_brackets('([{}{}{}])')); #  True
+print(check_brackets('([{}{}{}]')); #  False
+print(check_brackets('[{}]]]')); #  False
+print(check_brackets(' ')); #  False
