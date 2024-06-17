@@ -48,3 +48,5 @@ def is_palindrome_2(s=''):
 speed_test_one_arg(is_palindrome1,'Anna')
 speed_test_one_arg(is_palindrome1,'SDdssdfgsdEsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf')
 # ~18000-27000 microsec
+
+
