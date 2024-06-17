@@ -50,8 +50,8 @@ TODO:
 
 ## Medium
 
-1. checkBrackets (Wirth) (>>> current repeat)
-2. groupAnagramPairs
+1. checkBrackets (Wirth) 
+2. groupAnagramPairs  (>>> current repeat)
 3. findPopularChar
 4. findFirstAndSecondMax
 5. findMinEven
