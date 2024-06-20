@@ -17,3 +17,36 @@ def find_popular_char(str):
   return result
 
 print(find_popular_char('abcccccccd'))  #  c
+
+def find_popular_char_1(s=''):
+  if not isinstance(s,str) or s.strip() == '':
+    return []
+
+  d = {}
+  for char in s:
+    if char in d:
+      d[char] += 1
+    else:
+      d[char] = 1
+
+  sorted_dict_values = sorted(d.values())
+
+  if len(sorted_dict_values) > 1:
+    def filter_items(pair):
+      key, value = pair
+      max_val = sorted_dict_values[-1]
+      if value == max_val:
+        return True
+      else:
+        return False
+    
+    return list(dict(filter(filter_items, d.items())).keys())
+  else:
+    return list(d.keys())
+  
+print(find_popular_char_1(None));
+print(find_popular_char_1(2));
+print(find_popular_char_1('  '));
+print(find_popular_char_1('-'));
+print(find_popular_char_1('bbbaaccc'));
+print(find_popular_char_1('babacaddaagag'))
