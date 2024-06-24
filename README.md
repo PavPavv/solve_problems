@@ -51,12 +51,12 @@ TODO:
 ## Medium
 
 1. checkBrackets (Wirth) 
-2. groupAnagramPairs  (>>> current repeat)
+2. groupAnagramPairs  
 3. findPopularChar
-4. findFirstAndSecondMax
-5. findMinEven
-6. closureCounter
-7. fibonacci
+4. findFirstAndSecondMax 
+5. findMinEven 
+6. closureCounter 
+7. fibonacci  (>>> current repeat) 
 8. uniqueSums
 9. findLastIdx
 10. compareStr

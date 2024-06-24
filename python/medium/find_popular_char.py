@@ -34,7 +34,7 @@ def find_popular_char_1(s=''):
   if len(sorted_dict_values) > 1:
     def filter_items(pair):
       key, value = pair
-      max_val = sorted_dict_values[-1]
+      max_val = max(sorted_dict_values)
       if value == max_val:
         return True
       else:
