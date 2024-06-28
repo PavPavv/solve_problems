@@ -56,9 +56,9 @@ TODO:
 4. findFirstAndSecondMax 
 5. findMinEven 
 6. closureCounter 
-7. fibonacci  (>>> current repeat) 
+7. fibonacci 
 8. uniqueSums
-9. findLastIdx
+9. findLastIdx  (>>> current repeat)  
 10. compareStr
 11. reverseStr
 12. findBlackSheep
