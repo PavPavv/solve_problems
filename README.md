@@ -58,10 +58,10 @@ TODO:
 6. closureCounter 
 7. fibonacci 
 8. uniqueSums
-9. findLastIdx  (>>> current repeat)  
-10. compareStr
+9. findLastIdx 
+10. compareStr 
 11. reverseStr
-12. findBlackSheep
+12. findBlackSheep (>>> current repeat)
 13. longestCommonPrefixSimple\*
 14. findBinaryTreeSum
 15. findObjectArrsSumRec
