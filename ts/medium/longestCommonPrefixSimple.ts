@@ -1,28 +1,22 @@
-export const longestCommonPrefixSimple = (strArr: string[]): string => {
-  let result = '';
-  if (
-    Array.isArray(strArr) &&
-    strArr.length > 1 &&
-    strArr.every((item) => typeof item === 'string')
-  ) {
-    const preparedArr: string[] = strArr.map((word) =>
-      word.trim().toLowerCase(),
-    );
-    // we assume that first word in the array 100% had the same root as other words
-    const firstWord: string = preparedArr.shift()!; //  not in the array anymore
+const lcp = (arr: string[]) => {
+    const preparedArr = arr.map((word: string) => word.trim().toLowerCase());
+    // cut out first word in the array to variable
+    const firstAttempt = preparedArr.shift() ?? '';
     let counter = 0;
+    let result = '';
 
-    while (counter <= firstWord.length) {
-      let candidateChar = firstWord[counter];
-      for (const word of preparedArr) {
-        if (word[counter] !== candidateChar) {
-          return result;
+    while (counter <= firstAttempt.length) {
+        let candidateChar = firstAttempt[counter];
+
+        for (const word of preparedArr) {
+            if (word[counter] !== candidateChar) {
+                return result;
+            }
         }
-      }
-      result += candidateChar;
-      counter++;
+        result += candidateChar;
+        counter++;
     }
-  }
-  return result;
+    return result;
 };
-console.log(longestCommonPrefixSimple(['flower', 'flow', 'Flight']));
+
+console.log(lcp(['flower', 'flow', 'Flight']));

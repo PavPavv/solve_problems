@@ -22,4 +22,7 @@ function longestCommonPrefixSimple(strArr) {
   }
   return result;
 }
-console.log(longestCommonPrefixSimple(['red', 'flower', 'flow', 'Flight']));
+//	will not work
+console.log(longestCommonPrefixSimple(['redu', 'flower', 'flow', 'Flight']));
+//	will work
+console.log(longestCommonPrefixSimple(['flower', 'flow', 'Flight']));
