@@ -27,29 +27,37 @@ def longest_common_prefix_simple(arr):
 print(longest_common_prefix_simple(['flower', 'flow', 'Flight']))
 
 def lcp(arr: None) -> str:
-    if not isinstance(arr, list) and len(arr) > 1:
-        return TypeError('List of strs expected!')
+    if not isinstance(arr, list):
+        raise TypeError('List must be provided!')
+    elif len(arr) < 2:
+        return arr[0]
     prepared_arr = []
-    for item in arr:
-        if not isinstance(item, str):
-            prepared_arr.append('')
-        else:
-            prepared_arr.append(item.strip().lower())
-    first_attempt = prepared_arr[0]
-    prepared_arr.remove(first_attempt)
     counter = 0
     result = ''
+    
+    for word in arr:
+        if not isinstance(word, str):
+            raise TypeError('Must be a str type!')
+        if word:
+            prepared_arr.append(word.lower().strip())
+        else:
+            prepared_arr.append('')
 
-    while counter <= len(first_attempt):
-        candidate_char = first_attempt[counter]
+    first_attempt = prepared_arr[0]
+    prepared_arr.remove(first_attempt)
+    
+    if first_attempt:
+        while counter < len(prepared_arr):
+            candidate_char = first_attempt[counter]
+            for word in prepared_arr:
+                if word[counter] != candidate_char:
+                    return result
+            result += candidate_char
+            counter += 1
 
-        for word in prepared_arr:
-            if word[counter] != candidate_char:
-                return result;
-        
-        result += candidate_char
-        counter += 1
     return result
-
+print(lcp(['flower']))
+print(lcp(['']))
+print(lcp(['', '', '']))
 print(lcp(['flower', 'flow', 'Flight']))
 

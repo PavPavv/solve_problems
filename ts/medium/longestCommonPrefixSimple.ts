@@ -1,15 +1,13 @@
-const lcp = (arr: string[]) => {
-    const preparedArr = arr.map((word: string) => word.trim().toLowerCase());
-    // cut out first word in the array to variable
-    const firstAttempt = preparedArr.shift() ?? '';
+const lcp = (arr: string[]): string => {
+    const preparedArr = arr.slice().map((item: string) => item.toLowerCase().trim());
     let counter = 0;
     let result = '';
+    const firstAttempt = preparedArr.shift() ?? '';
 
-    while (counter <= firstAttempt.length) {
-        let candidateChar = firstAttempt[counter];
-
+    while (counter <= preparedArr.length) {
+        let candidateChar = firstAttempt[counter] ?? '';
         for (const word of preparedArr) {
-            if (word[counter] !== candidateChar) {
+            if (candidateChar !== word[counter]) {
                 return result;
             }
         }
@@ -18,5 +16,8 @@ const lcp = (arr: string[]) => {
     }
     return result;
 };
-
+console.log(lcp([]));
+console.log(lcp(['flower']));
+console.log(lcp(['']));
+console.log(lcp(['', '', '']));
 console.log(lcp(['flower', 'flow', 'Flight']));
