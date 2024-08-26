@@ -1,5 +1,7 @@
 # Popular algorithms problems solutions in JS, TS, Dart and Python
 
+- [Algorithms basic theory (ru)](https://github.com/PavPavv/MyJSCheatsheet/blob/master/js-code/algorithms/algorihms_ru.md)
+
 ## JS-specified problems
 
 1. Add new native method to the strings.
