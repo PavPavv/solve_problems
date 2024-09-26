@@ -1,6 +1,6 @@
 def square_each_num(num):
   if num < 10:
-    return num
+      return num*num
 
   result = ''
   slist = list(format(num))
