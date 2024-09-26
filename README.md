@@ -2,6 +2,10 @@
 
 - [Algorithms basic theory (ru)](https://github.com/PavPavv/MyJSCheatsheet/blob/master/js-code/algorithms/algorihms_ru.md)
 
+> Since 15th medium problem I have stopped solving in 4 languages 'cuz it's overwhelming. TS now is a JS with types, so no need to write ES5 manually if it is not a language specific tasks. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, there is not much sense in learning and using it instead of JS or Java/Kotlin.
+
+
+
 ## JS-specified problems
 
 1. Add new native method to the strings.
@@ -52,16 +56,16 @@ TODO:
 
 ## Medium
 
-1. checkBrackets (Wirth) 
+1. checkBrackets (Wirth)
 2. groupAnagramPairs  
 3. findPopularChar
-4. findFirstAndSecondMax 
-5. findMinEven 
-6. closureCounter 
-7. fibonacci 
+4. findFirstAndSecondMax
+5. findMinEven
+6. closureCounter
+7. fibonacci
 8. uniqueSums
-9. findLastIdx 
-10. compareStr 
+9. findLastIdx
+10. compareStr
 11. reverseStr
 12. findBlackSheep
 13. longestCommonPrefixSimple\*  (>>> current repeat)
@@ -105,7 +109,7 @@ TODO:
 
 > \*\*\* implementing Dijkstra loop
 
-> Since 15th medium problem I have stopped solving in 4 languages 'cuz it's overwhelming. TS now is a JS with types, so no need to write ES5 manually if it is not a language specific tasks. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, in is not much sense learning and using it instead of JS or Java/Kotlin.
+> Since 15th medium problem I have stopped solving in 4 languages 'cuz it's overwhelming. TS now is a JS with types, so no need to write ES5 manually if it is not a language specific tasks. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, there is not much sense in learning and using it instead of JS or Java/Kotlin.
 
 ### Tips
 
