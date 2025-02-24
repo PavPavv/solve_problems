@@ -1,5 +1,6 @@
 def with_separator(separator, *args):
   result = ''
+  print(args)
   for arg in args:
     result += separator + format(arg)
   return result

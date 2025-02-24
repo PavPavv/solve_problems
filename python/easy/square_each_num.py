@@ -9,5 +9,6 @@ def square_each_num(num):
     result += format(squareNum)
   return int(result)
 print(square_each_num(25))  # 425
+print(square_each_num(5))
 # O(n)
 
