@@ -25,3 +25,5 @@ print(selection_sort(b1))
 print(selection_sort(b2))
 print(selection_sort(b3))
 print(selection_sort(c1))
+
+# O(n^2)

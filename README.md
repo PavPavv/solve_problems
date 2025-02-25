@@ -51,6 +51,8 @@ TODO:
 26. squareGrid
 27. linearSearch
 28. countdown
+29. mySelectionSort
+30. mergeFish
 
 ## Medium
 

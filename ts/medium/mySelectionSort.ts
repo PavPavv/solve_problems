@@ -30,3 +30,5 @@ console.log(selectionSort(b1));
 console.log(selectionSort(b2));
 console.log(selectionSort(b3));
 console.log(selectionSort(c1));
+
+// O(n^2)
