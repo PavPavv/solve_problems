@@ -119,7 +119,17 @@ TODO:
 tsc fileName.ts && node fileName.js && rm -rf fileName.js
 ```
 
-or you may use \*_run_ts_file.sh_ file in ts catalog in order to use it in a command with a single argument of file name
+or you may use \*_run_ts_file.sh_ file in ts catalog in order to use it in a command with a single argument of file name:
+
+Add exec rights to file (once):
+
+```bash
+chmod +x run_ts_file.sh
+```
+
+```bash
+./run_ts_file.sh tsFileNameWithoutExtension
+```
 
 ### Wirth book notes
 

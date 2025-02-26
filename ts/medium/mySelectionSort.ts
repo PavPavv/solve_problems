@@ -6,7 +6,7 @@ const b2 = [8,7,6,5,4,3,2,1];
 const b3 = [2,1,3,4,6,5,7,8];
 const c1 = [10,1,5,100,3,2,15,9]; // [1,2,3,5,9,10,15,100]
 
-function selectionSort(arr: number[]): number[] {
+function mySelectionSort(arr: number[]): number[] {
   const result = [...arr];
   
   for (let i = 0; i < result.length; i++) {
@@ -22,13 +22,13 @@ function selectionSort(arr: number[]): number[] {
   }
   return result;
 }
-console.log(selectionSort([3,1,4,2]));
-console.log(selectionSort(a1));
-console.log(selectionSort(a2));
-console.log(selectionSort(a3));
-console.log(selectionSort(b1));
-console.log(selectionSort(b2));
-console.log(selectionSort(b3));
-console.log(selectionSort(c1));
+console.log(mySelectionSort([3,1,4,2]));
+console.log(mySelectionSort(a1));
+console.log(mySelectionSort(a2));
+console.log(mySelectionSort(a3));
+console.log(mySelectionSort(b1));
+console.log(mySelectionSort(b2));
+console.log(mySelectionSort(b3));
+console.log(mySelectionSort(c1));
 
 // O(n^2)
