@@ -2,7 +2,7 @@
 
 - [Algorithms basic theory (ru)](https://github.com/PavPavv/MyJSCheatsheet/blob/master/js-code/algorithms/algorihms_ru.md)
 
-> Since 15th medium problem I have stopped solving in 4 languages 'cuz it's overwhelming. TS now is a JS with types, so no need to write ES5 manually if it is not a language specific tasks. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, there is not much sense in learning and using it instead of JS or Java/Kotlin.
+> Since 15th medium problem I have stopped solving in 4 languages because it is overwhelming. TS now is a JS with types standard, so no need to write ES5 manually if it is not a language specific task. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, there is not much sense in using it for web. So I write in TS and Python mostly.
 
 ## JS-specified problems
 
@@ -53,6 +53,8 @@ TODO:
 28. countdown
 29. mySelectionSort
 30. mergeFish
+31. shortLongShortStr
+32. findMiddleNumInStr
 
 ## Medium
 
@@ -101,6 +103,10 @@ TODO:
 - myStringIntoSmsArr
 
 ---
+
+## Total
+
+For now: 65 solved programming problems with different ranges of difficulty (easy, medium, hard)
 
 ### Notes
 
