@@ -25,3 +25,5 @@ def power_set(data: Set[str]) -> Set[FrozenSet[str]]:
         fragrances.update(new_fragrances)
     return fragrances
 print(power_set({'', 'a', 'b'}))
+#   O(2^n)
+

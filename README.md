@@ -76,6 +76,7 @@ TODO:
 18. simpleSearchString (Wirth)\*\*\*
 19. insertionSort (Wirth)
 20. binaryInsertionSort (Wirth)
+21. powerSet
 
 TODO:
 

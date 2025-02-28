@@ -38,3 +38,5 @@ function powerSet(data: string[]): Set<Set<string>> {
   return fragrances;
 }
 console.log(powerSet(flowers));
+
+// O(2^n)
