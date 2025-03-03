@@ -7,10 +7,19 @@ def reverseStr(str):
     reversedStr += str[len(str) - counter]
   return reversedStr
   
-def isPalindrome(str):
+def is_palindrome(str):
 	reversedStr = reverseStr(str);
 	return str.lower() == reversedStr.lower()
 
-print(isPalindrome('Ana'));	# True
-print(isPalindrome('cat'));	# False
+print(is_palindrome('Ana'));	# True
+print(is_palindrome('cat'));	# False
 #	O(n)
+
+def is_palindrome_r(s):
+    if len(s) <= 1:
+        return True
+    if s[0] != s[len(s) - 1]:
+        return False
+    s = s[1:-1]
+    return is_palindrome_r(s)
+print(is_palindrome_r("racecar"))

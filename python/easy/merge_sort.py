@@ -1,4 +1,5 @@
 from typing import List
+import math
 
 sea_list = ["cod", "herring", "marling"]
 fresh_list = ["asp", "carp", "ide", "trout"]
@@ -28,3 +29,12 @@ def merge(sea: List[str], fresh: List[str]) -> List[str]:
                 result.append(fish)
     return result
 print(merge(sea_list, fresh_list))
+
+def merge_sort(l):
+    if len(l) == 1:
+        return l
+    mid = math.floor(len(l) / 2)
+    left = l[0:mid]
+    right = l[mid:]
+    return merge(merge_sort(left), merge_sort(right))
+print(merge_sort(["cod", "herring", "marling", "asp", "carp", "ide", "trout"]))
