@@ -55,6 +55,7 @@ TODO:
 30. mergeSort
 31. shortLongShortStr
 32. findMiddleNumInStr
+33. greedyKnapsack
 
 ## Medium
 
