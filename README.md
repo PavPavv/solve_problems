@@ -81,6 +81,7 @@ TODO:
 20. binaryInsertionSort (Wirth)
 21. powerSet
 22. trade
+23. findBinaryNode
 
 TODO:
 
@@ -108,7 +109,7 @@ TODO:
 
 ## Total
 
-For now: **67** solved programming problems with different ranges of difficulty (JS-specified(10), easy(33), medium(22), hard(2))
+For now: **68** solved programming problems with different ranges of difficulty (JS-specified(10), easy(33), medium(23), hard(2))
 
 ### Notes
 

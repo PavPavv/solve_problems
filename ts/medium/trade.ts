@@ -69,7 +69,7 @@ function tradeDp(p: number[]): [number, number] {
   }
   return [buyDayIdx, sellDayIdx];
 }
-console.log(tradeDp(prices));
+console.log(tradeDp(prices)); //  O(n)
 
 function tradeKadane(p: number[]): [number, number] {
   let minPrice = p[0];
@@ -91,4 +91,4 @@ function tradeKadane(p: number[]): [number, number] {
   }
   return [buyDayIdx, sellDayIdx];
 }
-console.log(tradeKadane(prices));
+console.log(tradeKadane(prices)); //  O(n) + O(1)?
