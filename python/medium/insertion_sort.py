@@ -1,3 +1,5 @@
+from typing import List
+
 users = [
   {
     "id": 8,
@@ -49,3 +51,16 @@ def insertion_sort(l):
   return result
     
 print(insertion_sort(users))
+
+def insertion_sort_1(l: List[int]) -> List[int]:
+    result = l[:]
+    for i in range(1,len(result)):
+        j = i
+        while j and result[j-1] > result[j]:
+            swap = result[j-1]
+            result[j-1] = result[j]
+            result[j] = swap
+            j -= 1
+            swap = None
+    return result
+print(insertion_sort_1([1,2,3,4,5,6,9,7,8]))

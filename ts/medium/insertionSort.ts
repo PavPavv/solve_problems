@@ -60,3 +60,19 @@ const insertionSort = (source: TUser[]): TUser[] => {
   return arr;
 };
 console.log(insertionSort(users));
+
+function anotherInsertionSort(arr: number[]): number[] {
+  const result = [...arr];
+  for (let i = 1; i < result.length; i++) {
+    let j = i;
+    while (j && result[j - 1] > result[j]) {
+      let swap: number | null = result[j - 1];
+      result[j - 1] = result[j];
+      result[j] = swap;
+      j -= 1;
+      swap = null;
+    }
+  }
+  return result;
+}
+console.log(anotherInsertionSort([1,2,3,4,5,6,9,7,8]));
