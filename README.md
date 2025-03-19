@@ -2,7 +2,7 @@
 
 - [Algorithms basic theory (ru)](https://github.com/PavPavv/MyJSCheatsheet/blob/master/js-code/algorithms/algorihms_ru.md)
 
-> Since 15th medium problem I have stopped solving in 4 languages because it is overwhelming. TS now is a JS with types standard, so no need to write JS manually if it is not a language specific task. Dart is a very interesting and much well-organized language than a JS or TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, there is not much sense in using it for a web. So I write in TS and Python mostly.
+> Since 15th medium problem I have stopped solving in 4 languages because it is overwhelming. TS now is a standard, which is a JS with types, so no need to write JS manually if it is not a language specific task. Dart is a very interesting and much well-organized language, than a TS, but since Dart is not a web standard and being used mostly for high abstract mobile development, there is not much sense in using it for a web. So I write in TS and Python mostly.
 
 ## JS-specified problems
 
@@ -14,8 +14,7 @@
 6. 5 ways of prototyping object in JS
 7. my Object.create()
 8. five(plus(seven(minus(three())))) which returns 9
-9. carry
-10. methods chain
+9. methods chain
 
 TODO:
 
@@ -82,6 +81,7 @@ TODO:
 21. powerSet
 22. trade
 23. findBinaryNode
+24. curry
 
 TODO:
 
@@ -96,6 +96,7 @@ TODO:
 
 1. knuthMorrisPrattSubstringSearch (Wirth)
 2. boyerMooreSubstrSearch (Wirth)
+3. simpleDirectedAcyclicGraph
 
 TODO:
 
@@ -109,7 +110,7 @@ TODO:
 
 ## Total
 
-For now: **68** solved programming problems with different ranges of difficulty (JS-specified(10), easy(33), medium(23), hard(2))
+For now: **69** solved programming problems with different ranges of difficulty (JS-specified(9), easy(33), medium(24), hard(3))
 
 ### Notes
 
