@@ -83,6 +83,7 @@ TODO:
 22. trade
 23. findBinaryNode
 24. curry
+25. simpleQueue
 
 TODO:
 
@@ -104,14 +105,13 @@ TODO:
 - arrSubset
 - rotate matrix at right up to 90 degrees
 - LinkedList
-- Queue
 - myStringIntoSmsArr
 
 ---
 
 ## Total
 
-For now: **70** solved programming problems with different ranges of difficulty (JS-specified(9), easy(34), medium(24), hard(3))
+For now: **71** solved programming problems with different ranges of difficulty (JS-specified(9), easy(34), medium(25), hard(3))
 
 ### Notes
 
