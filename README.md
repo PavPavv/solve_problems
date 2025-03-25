@@ -55,6 +55,7 @@ TODO:
 31. shortLongShortStr
 32. findMiddleNumInStr
 33. greedyKnapsack
+34. noIfNoTernary
 
 ## Medium
 
@@ -110,7 +111,7 @@ TODO:
 
 ## Total
 
-For now: **69** solved programming problems with different ranges of difficulty (JS-specified(9), easy(33), medium(24), hard(3))
+For now: **70** solved programming problems with different ranges of difficulty (JS-specified(9), easy(34), medium(24), hard(3))
 
 ### Notes
 
