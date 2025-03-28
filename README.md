@@ -56,6 +56,15 @@ TODO:
 32. findMiddleNumInStr
 33. greedyKnapsack
 34. noIfNoTernary
+35. differenceOfSums
+36. scoreOfString
+37. buildArray
+38. convertTemperature
+39. defangIPaddr
+40. finalValueAfterOperations
+41. numIdenticalPairs
+42. getSneakyNumbers
+43. numJewelsInStones
 
 ## Medium
 
@@ -84,6 +93,7 @@ TODO:
 23. findBinaryNode
 24. curry
 25. simpleQueue
+26. bubbleSort
 
 TODO:
 
@@ -111,7 +121,7 @@ TODO:
 
 ## Total
 
-For now: **71** solved programming problems with different ranges of difficulty (JS-specified(9), easy(34), medium(25), hard(3))
+For now: **81** solved programming problems with different ranges of difficulty (JS-specified(9), easy(43), medium(26), hard(3))
 
 ### Notes
 
