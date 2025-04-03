@@ -65,6 +65,8 @@ TODO:
 41. numIdenticalPairs
 42. getSneakyNumbers
 43. numJewelsInStones
+44. transformArray
+45. shuffle
 
 ## Medium
 
@@ -121,7 +123,7 @@ TODO:
 
 ## Total
 
-For now: **81** solved programming problems with different ranges of difficulty (JS-specified(9), easy(43), medium(26), hard(3))
+For now: **83** solved programming problems with different ranges of difficulty (JS-specified(9), easy(45), medium(26), hard(3))
 
 ### Notes
 
