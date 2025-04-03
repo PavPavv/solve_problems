@@ -15,10 +15,11 @@
 7. my Object.create()
 8. five(plus(seven(minus(three())))) which returns 9
 9. methods chain
-
-TODO:
-
-- myMap
+10. myReduce
+11. myFilter
+12. myMap
+13. compose
+14. calledOnce
 
 ## Easy
 
@@ -67,6 +68,7 @@ TODO:
 43. numJewelsInStones
 44. transformArray
 45. shuffle
+46. convertDateToBinary
 
 ## Medium
 
@@ -123,7 +125,7 @@ TODO:
 
 ## Total
 
-For now: **83** solved programming problems with different ranges of difficulty (JS-specified(9), easy(45), medium(26), hard(3))
+For now: **88** solved programming problems with different ranges of difficulty (JS-specified(13), easy(46), medium(26), hard(3))
 
 ### Notes
 
