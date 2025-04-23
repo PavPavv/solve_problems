@@ -20,6 +20,9 @@
 12. myMap
 13. compose
 14. calledOnce
+15. addTwoPromises
+16. sleep
+17. cancellable
 
 ## Easy
 
@@ -69,6 +72,7 @@
 44. transformArray
 45. shuffle
 46. convertDateToBinary
+47. chunkArray
 
 ## Medium
 
@@ -125,7 +129,7 @@ TODO:
 
 ## Total
 
-For now: **88** solved programming problems with different ranges of difficulty (JS-specified(13), easy(46), medium(26), hard(3))
+For now: **93** solved programming problems with different ranges of difficulty (JS-specified(17), easy(47), medium(26), hard(3))
 
 ### Notes
 
