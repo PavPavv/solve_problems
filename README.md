@@ -104,6 +104,7 @@
 25. simpleQueue
 26. bubbleSort
 27. memoize
+28. joinListsByUniqueIds
 
 TODO:
 
@@ -131,7 +132,7 @@ TODO:
 
 ## Total
 
-For now: **95** solved programming problems with different ranges of difficulty (JS-specified(18), easy(47), medium(27), hard(3))
+For now: **96** solved programming problems with different ranges of difficulty (JS-specified(18), easy(47), medium(28), hard(3))
 
 ### Notes
 
