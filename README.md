@@ -23,6 +23,7 @@
 15. addTwoPromises
 16. sleep
 17. cancellable
+18. sortBy
 
 ## Easy
 
@@ -102,6 +103,7 @@
 24. curry
 25. simpleQueue
 26. bubbleSort
+27. memoize
 
 TODO:
 
@@ -129,7 +131,7 @@ TODO:
 
 ## Total
 
-For now: **93** solved programming problems with different ranges of difficulty (JS-specified(17), easy(47), medium(26), hard(3))
+For now: **95** solved programming problems with different ranges of difficulty (JS-specified(18), easy(47), medium(27), hard(3))
 
 ### Notes
 
