@@ -24,6 +24,7 @@
 16. sleep
 17. cancellable
 18. sortBy
+19. groupBy
 
 ## Easy
 
@@ -132,7 +133,7 @@ TODO:
 
 ## Total
 
-For now: **96** solved programming problems with different ranges of difficulty (JS-specified(18), easy(47), medium(28), hard(3))
+For now: **97** solved programming problems with different ranges of difficulty (JS-specified(19), easy(47), medium(28), hard(3))
 
 ### Notes
 
