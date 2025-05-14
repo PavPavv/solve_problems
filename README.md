@@ -105,16 +105,17 @@
 25. simpleQueue
 26. bubbleSort
 27. memoize
-28. joinListsByUniqueIds
+28. joinListsByUniqueIds (sber problem)
+29. myFlat
+30. flat
 
 TODO:
 
 - generate binary tree (class)
 - binarySearch
-- sber problem
 - func('a.b.d.e') -> { a: { b: { d: { e: {} } } } }
 - findDeepestLeavesSum (sumTree)
-- flat array or object
+- flat object
 
 ## Hard
 
@@ -133,7 +134,7 @@ TODO:
 
 ## Total
 
-For now: **97** solved programming problems with different ranges of difficulty (JS-specified(19), easy(47), medium(28), hard(3))
+For now: **99** solved programming problems with different ranges of difficulty (JS-specified(19), easy(47), medium(30), hard(3))
 
 ### Notes
 
