@@ -25,6 +25,7 @@
 17. cancellable
 18. sortBy
 19. groupBy
+20. arrayWrapper
 
 ## Easy
 
@@ -108,6 +109,7 @@
 28. joinListsByUniqueIds (sber problem)
 29. myFlat
 30. flat
+31. compactObject
 
 TODO:
 
@@ -134,7 +136,7 @@ TODO:
 
 ## Total
 
-For now: **99** solved programming problems with different ranges of difficulty (JS-specified(19), easy(47), medium(30), hard(3))
+For now: **101** solved programming problems with different ranges of difficulty (JS-specified(20), easy(47), medium(31), hard(3))
 
 ### Notes
 

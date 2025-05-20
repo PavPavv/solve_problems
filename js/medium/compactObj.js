@@ -1,28 +1,28 @@
 function main() {
     function compactObject(obj) {
-    if (Array.isArray(obj)) {
-      return obj.map(compactObject).filter(Boolean);
-    } else if (obj !== null && typeof obj === 'object') {
-      const result = {};
-      for (const key in obj) {
-        const value = obj[key];
-        if (Boolean(value)) {
-          const compactedValue = compactObject(value);
-          if (
-            (typeof compactedValue === 'object' &&
-              compactedValue !== null &&
-              Object.keys(compactedValue).length) ||
-            (Array.isArray(compactedValue) && compactedValue.length) ||
-            typeof compactedValue !== 'object'
-          ) {
-            result[key] = compactedValue;
+      if (Array.isArray(obj)) {
+        return obj.map(compactObject).filter(Boolean);
+      } else if (obj !== null && typeof obj === 'object') {
+        const result = {};
+        for (const key in obj) {
+          const value = obj[key];
+          if (Boolean(value)) {
+            const compactedValue = compactObject(value);
+            if (
+              (typeof compactedValue === 'object' &&
+                compactedValue !== null &&
+                Object.keys(compactedValue).length) ||
+              (Array.isArray(compactedValue) && compactedValue.length) ||
+              typeof compactedValue !== 'object'
+            ) {
+              result[key] = compactedValue;
+            }
           }
         }
+        return result;
+      } else {
+        return obj;
       }
-      return result;
-    } else {
-      return obj;
-    }
   }
 
   console.log(
