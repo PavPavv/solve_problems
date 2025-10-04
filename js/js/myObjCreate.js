@@ -4,7 +4,7 @@ const objTest = {
 };
 
 Object.prototype.myCreate = function (obj) {
-  return ({}.__proto_ = obj);
+  return ({}.__proto__ = obj);
 };
 
 const o1 = Object.myCreate(objTest);
