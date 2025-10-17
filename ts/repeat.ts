@@ -81,7 +81,7 @@ export const main = (): void => {
     const copy: TArtist[] = [...data];
     const result: TArtist[] = [];
     
-    for (let i = 0; i < copy.length; i++) {
+    for (let i = 0; i < data.length; i++) {
       const maxIdx = findMaxIdx(copy.map((artist: TArtist) => artist.counter));
       const targetArr = copy.splice(maxIdx, 1);
       if (targetArr.length) {
