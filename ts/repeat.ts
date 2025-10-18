@@ -25,6 +25,27 @@ export const main = (): void => {
   // console.log(bSearch([3,2,4,5,6,8,7,9,10], 9));
   // console.log(bSearch([2,3,4,5,6,7.7,8,9,10], -2));
 
+  const recBSearch = (arr: number[], target: number, low = 0, high: number | null = null): number => {
+    if (high === null) {
+      high = arr.length - 1;
+    }
+
+    if (low > high) {
+      return -1;
+    }
+    
+    let mid = Math.floor((low + high) / 2);
+
+    if (arr[mid] === target) {
+      return mid;
+    } else if (arr[mid] < target) {
+      return recBSearch(arr, target, mid + 1, high);
+    } else {
+      return recBSearch(arr, target, low, mid - 1);
+    }
+  };
+  console.log(recBSearch([2,3,4,5,6,7,8,9,10], 9));
+
   // 2. selection search
   // my
   type TArtist = {
@@ -91,6 +112,42 @@ export const main = (): void => {
 
     return result;
   };
-  console.log(artistsSelectionSort(DATA));
+  // console.log(artistsSelectionSort(DATA));
+
+
+  // const sum = (arr: number[]): number => {
+  //   let result = 0;
+  //   arr.forEach((n) => {
+  //     result += n;
+  //   })
+  //   return result;
+  // }
+  const sum = (arr: number[]): number => {
+    if (arr.length === 0) return 0;
+    return arr.shift()! + sum(arr);  
+  }
+  // console.log(sum([2,4,6]));
+
+  const arrLen = <T>(arr: T[]): number => {
+    // let res = 0;
+    // arr.forEach(() => {
+    //   res++;
+    // });
+    // return res;
+
+    if (arr.length === 0) return 0;
+    return [arr.shift()].length + arrLen(arr);
+  }
+  // console.log(arrLen([2,4,6])); // 3
+
+  const findMax = (arr: number[]): number => {
+    if (arr.length === 2) {
+      return Math.max(...arr);
+    }
+    const first = arr.shift()!;
+    const subMax = findMax(arr);
+    return first > subMax ? first : subMax;
+  };
+  // console.log(findMax([10, 100, 2, 4, 6]));
 };
 main();
