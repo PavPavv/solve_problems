@@ -1,153 +1,43 @@
-export const main = (): void => {
-  // 1. binary search
-  // function bSearch(arr: number[], target: number): number {
-  //   const sortedArr = arr.sort((a: number, b: number) => a - b);
-  //   let result = -1;
-  //   let l = 0;
-  //   let r = sortedArr.length - 1;
+/// <reference lib="ES2015" />
 
-  //   while (l <= r) {
-  //     const mid = Math.floor(( l+ r) / 2);
-  //     const candidate = sortedArr[mid];
-      
-  //     if (candidate === target) {
-  //       return result = mid;
-  //     } else if (target < candidate) {
-  //       r = mid - 1;
-  //     } else {
-  //       l = mid + 1;
-  //     }
-  //   }
+export const main = async (): Promise<void> => {
+  // TOTAL: binary search, recursion binary search, selection sort, recursion, quick sort
+  
+  // prev repeat: selection sort
+  // next repeat: recursion funcs
 
-  //   return result;
-  // }
-  // console.log(bSearch([2,3,4,5,6,7.7,8,9,10], 9));
-  // console.log(bSearch([3,2,4,5,6,8,7,9,10], 9));
-  // console.log(bSearch([2,3,4,5,6,7.7,8,9,10], -2));
-
-  const recBSearch = (arr: number[], target: number, low = 0, high: number | null = null): number => {
-    if (high === null) {
-      high = arr.length - 1;
-    }
-
-    if (low > high) {
-      return -1;
-    }
-    
-    let mid = Math.floor((low + high) / 2);
-
-    if (arr[mid] === target) {
-      return mid;
-    } else if (arr[mid] < target) {
-      return recBSearch(arr, target, mid + 1, high);
-    } else {
-      return recBSearch(arr, target, low, mid - 1);
-    }
-  };
-  console.log(recBSearch([2,3,4,5,6,7,8,9,10], 9));
-
-  // 2. selection search
-  // my
-  type TArtist = {
-    id: number;
-    name: string;
-    counter: number;
+  type TSearchOptions = {
+    min: boolean;
   }
 
-  const DATA: TArtist[] = [
-    {
-      id: 1,
-      name: 'Metallica',
-      counter: 1000,
-    },
-    {
-      id: 2,
-      name: 'The White Stripes',
-      counter: 99,
-    },
-    {
-      id: 3,
-      name: 'Limp Bizkit',
-      counter: 700,
-    },
-    {
-      id: 4,
-      name: 'Norah Jones',
-      counter: 7,
-    },
-    {
-      id: 5,
-      name: 'Kings Of Leon',
-      counter: 999,
-    },
-  ];
-
-  //console.log(DATA.sort((a, b) => a.counter - b.counter));
-
-  const findMaxIdx = (nums: number[]): number => {
-    if (!nums.length) return -1;
-
-    let max = nums[0];
+  const findIdx = (arr: number[], options?: TSearchOptions): number => {
+    let peak = arr[0];
     let idx = 0;
-    
-    for (let i = 0; i < nums.length; i++) {
-      if (nums[i] > max) {
+    const maxSearch = options && options.min ? false : true;
+
+    for (let i = 0; i < arr.length; i++) {
+      const item  = arr[i];
+      if (maxSearch && item > peak) {
+        peak = item;
+        idx = i;
+      } else if (!maxSearch && item < peak) {
+        peak = item;
         idx = i;
       }
     }
     return idx;
-  };
+  }
 
-  const artistsSelectionSort = (data: TArtist[]): TArtist[] => {
-    const copy: TArtist[] = [...data];
-    const result: TArtist[] = [];
-    
-    for (let i = 0; i < data.length; i++) {
-      const maxIdx = findMaxIdx(copy.map((artist: TArtist) => artist.counter));
-      const targetArr = copy.splice(maxIdx, 1);
-      if (targetArr.length) {
-        result.push(targetArr[0]);
-      }
+  const selectionSort = (arr: number[]): number[] => {
+    const copy = arr.slice();
+    const result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+      const maxIdx = findIdx(copy, { min: true });
+      result.push(copy.splice(maxIdx, 1));
     }
-
     return result;
-  };
-  // console.log(artistsSelectionSort(DATA));
-
-
-  // const sum = (arr: number[]): number => {
-  //   let result = 0;
-  //   arr.forEach((n) => {
-  //     result += n;
-  //   })
-  //   return result;
-  // }
-  const sum = (arr: number[]): number => {
-    if (arr.length === 0) return 0;
-    return arr.shift()! + sum(arr);  
   }
-  // console.log(sum([2,4,6]));
-
-  const arrLen = <T>(arr: T[]): number => {
-    // let res = 0;
-    // arr.forEach(() => {
-    //   res++;
-    // });
-    // return res;
-
-    if (arr.length === 0) return 0;
-    return [arr.shift()].length + arrLen(arr);
-  }
-  // console.log(arrLen([2,4,6])); // 3
-
-  const findMax = (arr: number[]): number => {
-    if (arr.length === 2) {
-      return Math.max(...arr);
-    }
-    const first = arr.shift()!;
-    const subMax = findMax(arr);
-    return first > subMax ? first : subMax;
-  };
-  // console.log(findMax([10, 100, 2, 4, 6]));
+  console.log(selectionSort([20,4,5,31,1,-5,-15]));
 };
 main();
