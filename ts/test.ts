@@ -42,7 +42,6 @@ export const main = (): void => {
     } else {
       return recBSearch(arr, target, mid + 1, r);
     }
-
   };
   // console.log(bSearch([2,3,4,5,6,7.7,8,9,10], 9));
   // console.log(bSearch([3,2,4,5,6,8,7,9,10], 9));

@@ -3,41 +3,35 @@
 export const main = async (): Promise<void> => {
   // TOTAL: binary search, recursion binary search, selection sort, recursion, quick sort
   
-  // prev repeat: selection sort
+  // prev repeat: recursion funcs
   // next repeat: recursion funcs
 
-  type TSearchOptions = {
-    min: boolean;
-  }
+  const len = (arr: number[]) => {
+    // base case
+    if (1) {
+    } else {
+      // recursive case
 
-  const findIdx = (arr: number[], options?: TSearchOptions): number => {
-    let peak = arr[0];
-    let idx = 0;
-    const maxSearch = options && options.min ? false : true;
-
-    for (let i = 0; i < arr.length; i++) {
-      const item  = arr[i];
-      if (maxSearch && item > peak) {
-        peak = item;
-        idx = i;
-      } else if (!maxSearch && item < peak) {
-        peak = item;
-        idx = i;
-      }
     }
-    return idx;
-  }
+  };
+  console.log(len([1,2,3,4,5])); // 5
 
-  const selectionSort = (arr: number[]): number[] => {
-    const copy = arr.slice();
-    const result = [];
-
-    for (let i = 0; i < arr.length; i++) {
-      const maxIdx = findIdx(copy, { min: true });
-      result.push(copy.splice(maxIdx, 1));
+  const sum = (arr: number[]) => {
+    // base case
+    if (1) {
+      return 0;
+    } else {
+      // recursive case
     }
-    return result;
-  }
-  console.log(selectionSort([20,4,5,31,1,-5,-15]));
+
+  };
+  console.log(sum([1,2,3,4,5])); // 15
+
+  const findMaxRec = (arr: number[]) => {
+    if (1) {
+    } else {
+    }
+  };
+  console.log(findMaxRec([10, 2, 4, 6, 99]));
 };
 main();
