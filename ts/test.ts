@@ -169,9 +169,70 @@ export const main = (): void => {
   //console.log(quickSort([1,2,3,9,8,100,4,5,99]));
   //console.log(quickSort([2,1,3,5,4]));
 
+  const quickSort1 = (arr: number[]): number[] => {
+    if (arr.length < 2) {
+      return arr;
+    } else {
+      const pivot = arr.shift();
+      const lessArr = [];
+      const greatestArr = [];
+      arr.forEach((item) => {
+        if (item > pivot) {
+          greatestArr.push(item);
+        } else {
+          lessArr.push(item);
+        }
+      });
+      return quickSort(lessArr).concat([pivot]).concat(quickSort(greatestArr));
+    }
+  };
+  console.log('Quick sort 1 -> ', quickSort1([5,1,4,3,99,2]));
+
   // --MERGE SORT--
+  // O(n)
+  const merge = (arr1: number[], arr2: number[]): number[] => {
+    const result = [];
+    let i = 0;
+    let j = 0;
+
+    while (i < arr1.length && j < arr2.length) {
+      if (arr1[i] <= arr2[j]) {
+        result.push(arr1[i]);
+        i++;
+      } else {
+        result.push(arr2[j]);
+        j++;
+      }
+    }
+    return [...result, ...arr1.slice(i), ...arr2.slice(j)];
+  };
+  
+  const mergeSort = (arr: number[]): number[] => {
+    if (arr.length < 2) {
+      return arr;
+    }
+    const mid = Math.floor(arr.length / 2);
+    return merge(mergeSort(arr.slice(0, mid)), mergeSort(arr.slice(mid)));
+  };
+  console.log('Merge sort -> ', mergeSort([5,1,4,3,99,2]));
 
   // --BUBBLE SORT--
+
+  const bubbleSort = (arr: number[]): number[] => {
+    const copy = [...arr];
+    
+    for (let i = 0; i < copy.length; i++) {
+      for (let j = 0; j < copy.length - i - 1; j++) {
+        if (copy[j] > copy[j + 1]) {
+          const c = copy[j];
+          copy[j] = copy[j + 1];
+          copy[j + 1] = c;
+        }
+      }
+    }
+    return copy;
+  };
+  console.log('Bubble sort -> ', bubbleSort([5,1,4,3,99,2]));
 
   // Graph
   // Interfaces
