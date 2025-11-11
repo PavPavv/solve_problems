@@ -114,7 +114,6 @@
 TODO:
 
 - generate binary tree (class)
-- binarySearch
 - func('a.b.d.e') -> { a: { b: { d: { e: {} } } } }
 - findDeepestLeavesSum (sumTree)
 - flat object
